@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SoundCloud Music Search</title>
+        <!-- ПОДКЛЮЧЕНИЕ CSS ФАЙЛА ДЛЯ РАБОТЫ -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- ШАПКА САЙТА -->
+             <header>
+                <h1><i class="fa-brands fa-soundcloud"></i> SoundCLoud Search </h1>
+                <p> Найди свою любимую музыку за пару кликов! </p>
+             </header>
+             <!-- БЛОК ПОИСКА -->
+              <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Введите название песни или исполнителя...">
+                <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i> Найти </button>
+              </div>
+
+              <!-- ПРЕЛОАДЕР -->
+               <div id="loader" class="loader hidden"></div>
+
+               <!-- РЕЗУЛЬТАТЫ ПОИСКА -->
+                <div id="resultsContainer" class="results-grid"></div>
+
+               <!-- СООБЩЕНИЕ ЕСЛИ НИЧЕГО НЕ НАЙДЕНО -->
+                <div id="noResults" class="no-results hidden">
+                    <i class="fa-regular fa-face-frown"></i>
+                    <p> Ничего не найдено. Попробуйте другой запрос. </p>
+                </div>
+        </div>
+
+        <!-- ПОДКЛЮЧЕНИЕ JavaScript -->
+         <script src="script.js"></script>
+    </body>
+</html>
